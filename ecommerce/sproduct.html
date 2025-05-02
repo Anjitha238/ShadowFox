@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Style */
+        #header {
+            background-color: #ff4081;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #header .logo {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        #navbar {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        #navbar li {
+            display: inline;
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #navbar .active {
+            color: #ffeb3b;
+        }
+
+        /* Page Header */
+        #page-header {
+            background: #ff4081;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #page-header h2 {
+            font-size: 40px;
+        }
+
+        #page-header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* About Section */
+        #about-head {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 10%;
+            background-color: white;
+            margin-top: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        #about-head img {
+            width: 45%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content {
+            width: 50%;
+        }
+
+        .about-content h2 {
+            color: #ff4081;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Call to Action - App Section */
+        #about-app {
+            background-color: #ffeb3b;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 30px;
+        }
+
+        #about-app h1 {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #about-app a {
+            color: #3f51b5;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+            margin-top: 30px;
+        }
+
+        footer .col {
+            margin-bottom: 20px;
+            padding: 0 15px;
+            color: white;
+        }
+
+        footer h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        footer .follow .icon i {
+            font-size: 20px;
+            margin-right: 15px;
+            color: white;
+        }
+
+        footer .icon i:hover {
+            color: #ff4081;
+        }
+
+        footer .col a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        footer .col a:hover {
+            color: #ffeb3b;
+        }
+
+        footer .copyright {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+
+<body>
+    <section id="header">
+        <a href="#"> <img src="img/logo.png" alt="logo" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a class="active" href="shop.html">Shop</a></li>
+                <li> <a href="blog.html">Blog</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-grp">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / T-shirt</h6>
+            <h4>Men's fashion t-shirt</h4>
+            <h2>$139.00</h2>
+            <select>
+                <option>Select size</option>
+                <option>XXl</option>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>S</option>
+                <input type="number" value="1">
+                <button>Add to cart</button>
+                <h4>Product details</h4>
+                <span>The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed
+                    from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear.
+                    Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range
+                    of colors, it offers it all in the ultimate head-turning package.</span>
+            </select>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured products</h2>
+        <p>Summer collection New modern design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon astronaut T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon astronaut T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon astronaut T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n4.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon astronaut T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for more newsletters</h4>
+            <p>Get E-mail updates about our latest shops and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="your email address">
+            <button>Sign up</button>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address</strong> :562 wellington street, San fransisco</p>
+            <p><strong>Phone</strong> +01 1111 111</p>
+            <p><strong>Hours</strong> 10:00 - 18:00, Mon- Sat</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery information</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My contacts</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install app</h4>
+            <p>From app store or google play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secure payment gateway</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">© 2021, Shreyas- html css js ecommerce template</div>
+    </footer>
+
+    <script>
+        var mainimg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+        smallimg[0].onclick = function () {
+            mainimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function () {
+            mainimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function () {
+            mainimg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function () {
+            mainimg.src = smallimg[3].src;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

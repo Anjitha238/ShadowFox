@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Blog</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Style */
+        #header {
+            background-color: #ff4081;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #header .logo {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        #navbar {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        #navbar li {
+            display: inline;
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #navbar .active {
+            color: #ffeb3b;
+        }
+
+        /* Page Header */
+        #page-header {
+            background: #ff4081;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #page-header h2 {
+            font-size: 40px;
+        }
+
+        #page-header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* About Section */
+        #about-head {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 10%;
+            background-color: white;
+            margin-top: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        #about-head img {
+            width: 45%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content {
+            width: 50%;
+        }
+
+        .about-content h2 {
+            color: #ff4081;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Call to Action - App Section */
+        #about-app {
+            background-color: #ffeb3b;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 30px;
+        }
+
+        #about-app h1 {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #about-app a {
+            color: #3f51b5;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+            margin-top: 30px;
+        }
+
+        footer .col {
+            margin-bottom: 20px;
+            padding: 0 15px;
+            color: white;
+        }
+
+        footer h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        footer .follow .icon i {
+            font-size: 20px;
+            margin-right: 15px;
+            color: white;
+        }
+
+        footer .icon i:hover {
+            color: #ff4081;
+        }
+
+        footer .col a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        footer .col a:hover {
+            color: #ffeb3b;
+        }
+
+        footer .copyright {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+    </style>
+</head>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"> <img src="img/logo.png" alt="logo" class="logo" onclick="window.location.href='index.html';"></a>
+        <div>
+            <ul id="navbar">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="shop.html">Shop</a></li>
+                <li> <a class="active" href="blog.html">Blog</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header" class="blog-header">
+        <h2>#Read More</h2>
+        <p>Read all case studies of our products</p>
+    </section>
+
+    <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b1.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The Cotton Jersey Zip Up Hoodie</h4>
+                <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard..</p>
+                <a href="#">Continue reading</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b2.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>How to Style a Quiff</h4>
+                <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard..</p>
+                <a href="#">Continue reading</a>
+            </div>
+            <h1>13/02</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b3.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Must Have Skater-Girl Items</h4>
+                <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard..</p>
+                <a href="#">Continue reading</a>
+            </div>
+            <h1>13/03</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b4.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Runway Inspired Trends</h4>
+                <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard..</p>
+                <a href="#">Continue reading</a>
+            </div>
+            <h1>13/04</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b6.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>AW20 Menswear Trends</h4>
+                <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard..</p>
+                <a href="#">Continue reading</a>
+            </div>
+            <h1>13/05</h1>
+        </div>
+    </section>
+
+    <section id="pagination">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Next</a>
+    </section>
+
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>Sign Up for Our Newsletter</h4>
+            <p>Get the latest updates, special offers, and fashion trends!</p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address</strong>: 562 Wellington Street, San Francisco</p>
+            <p><strong>Phone</strong>: +01 1111 111</p>
+            <p><strong>Hours</strong>: 10:00 - 18:00, Mon-Sat</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery information</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My contacts</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install app</h4>
+            <p>From app store or google play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secure payment gateway</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">© 2021, Ecommerce Template</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
