@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Anjitha Babu V</span></h1>
+            <p>Data Analyst | Web Developer</p>
+            <p>I am a passionate and motivated BCA second-year student with a keen interest in web technologies, and data analysis.</p>
+            <div class="hero-buttons">
+                <button onclick="scrollToSection('projects')" class="resume-button">View My Work</button>
+                <button onclick="scrollToSection('contact')" class="resume-button">Contact Me</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h1 class="glow-text">About Me</h1>
+        <p>Hey there! 👋 I'm Anjitha Babu V, a BCA student who’s super passionate about web development,
+             data analysis, and AI. I love bringing creative ideas to life through code and making websites that not only
+              look great but also work smoothly, and I’m always eager to learn more.When I’m not coding, you’ll probably find 
+              me exploring new tech trends, sleeping, reading books or binge-watching a good series😆.</p>
+    </section>
+    
+    <section id="projects">
+        <h1 class="glow-text">Projects</h1>
+        <div class="project-container">
+            <div  class="project-box" >
+                <h3>Online Movie Review Platform</h3>
+                <p> Developed a full-stack movie review platform with HTML, CSS, JS, as
+                    front end and Python as back end and MySQL database to store the
+                    data’s  allowing users to review and rate movies.<br>
+                    Technologies Used: MySQL , HTML ,CSS, JavaScript, Python</p>
+            </div>
+            <div class="project-box">
+                <h3>Quiz App</h3>
+                <p>Constructed an interactive Quiz Game application using Python and
+                    object-oriented programming, incorporating a scoring system that
+                    tracked user performance across 5 diverse knowledge subjects.<br>
+                   Technologies Used: Python</p>
+            </div>
+            <div class="project-box">
+                <h3>Netflix Data Analysis</h3>
+                <p> Analyzed Netflix dataset using Python, Pandas, Matplotlib, Seaborn to
+                    extract insights on content trends and implemented data-driven
+                    insights to understand Netflix's content strategy.</p>
+            </div>        
+            <div class="project-box">
+                <h3>Personal Portfolio Website</h3>
+                <p>Designed and developed a personal portfolio website using HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h1 class="glow-text">Skills</h1>
+        <div class="skills-container">
+            <div class="skills-box">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Team work</li>
+                    <li>Time Management</li>
+                    <li> Leadership</li>
+                    <li>Communication</li>
+                    <li>Active Listening</li>
+                </ul>
+            </div>
+            <div class="skills-box">
+                <h3>Tech Skills</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL,MySQL</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="resume">
+        <h1 class="glow-text">Resume</h1>
+        <p>You can view or download my resume below:</p>
+        <a href="resume.pdf" target="_blank" class="resume-button">View Resume</a>
+
+    </section>
+    
+    <section id="contact">
+        <h1 class="glow-text">Contact</h1>
+        <p>Email: <a href="mailto:anjithababu238@gmail.com">anjithababu238@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/anjitha-babu-v">linkedin.com/in/anjitha-babu-v</a></p>
+        <p>Phone: 7306507297</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>

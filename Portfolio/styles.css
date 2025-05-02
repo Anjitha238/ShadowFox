@@ -1,0 +1,140 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #E6E6FA, #9370DB);
+    color: #fff;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(75, 0, 130, 0.9);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #E6E6FA;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+section {
+    padding: 80px 50px;
+    text-align: center;
+    min-height: 70vh;
+    width: 100%;
+    max-width: 980px;
+    margin: 50px auto;
+    border-radius: 80px;
+    box-shadow: 0 0 25px rgba(230, 230, 250, 0.5);
+    background: rgba(75, 0, 130, 0.9);
+}
+
+.project-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 80px;
+    width: 95%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(230, 230, 250, 0.5);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    gap: 20px; 
+}
+
+
+.resume-button {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 16px 35px;
+    background: linear-gradient(45deg, #E6E6FA, #9370DB);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.resume-button:hover {
+    background: #ffffff;
+    color: #9370DB;
+    box-shadow: 0 0 15px #E6E6FA, 0 0 30px #9370DB;
+}
+
+h1, h2{
+    font-size: 45px;
+    color: #E6E6FA;
+    text-shadow: 0 0 10px #E6E6FA, 0 0 20px #9370DB, 0 0 30px #ffffff;
+}
+
+
+#contact a {
+    color: lightgreen !important;
+    text-decoration: underline !important;
+    font-weight: bold;
+}
+
+
+#contact a:hover {
+    color: #444 !important; 
+    text-decoration: underline !important;
+}
+
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.skills-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    width: 40%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(230, 230, 250, 0.5);
+}
+
